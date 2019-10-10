@@ -262,3 +262,13 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
+.btn {
+  text-align: center;
+  font-size: 1.6rem;
+  background-color: #008B8B;
+  color: white;
+  width: 80%;
+  border-radius: 10px;
+  padding: 1rem 0;
+  margin: 1rem 0;
+}
