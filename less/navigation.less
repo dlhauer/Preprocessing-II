@@ -1,17 +1,23 @@
 // Navigation Styles here
 
-nav {
-  .custom-layout(space-between, center, row, wrap);
-  border-bottom: 2px dashed lightgray;
-  padding: 2rem 20rem;
+.nav-container {
+  border-bottom: 2px dashed @navigation-border;
+  .custom-layout(center, center, row, wrap);
+  padding: 2rem 0;
 
-  a {
-    text-decoration: none;
-    color: @font-color;
-  }
+  nav {
+    .custom-layout(space-between, center, row, wrap);
+    width: 780px;
+    // border: 1px solid red;
 
-  .links a {
-    margin-left: 4rem;
-    font-size: 1.6rem;
+    a {
+      text-decoration: none;
+      color: @font-color;
+    }
+
+    .links a {
+      margin-left: 4rem;
+      font-size: 1.6rem;
+    }
   }
-}
+} //Closes nav-container
