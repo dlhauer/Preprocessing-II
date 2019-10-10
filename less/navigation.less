@@ -8,16 +8,32 @@
   nav {
     .custom-layout(space-between, center, row, wrap);
     width: 780px;
-    // border: 1px solid red;
+
+    @media @mobile {
+      flex-direction: column;
+    }
+    
 
     a {
       text-decoration: none;
       color: @font-color;
     }
 
+    .links {
+      @media @mobile {
+        .custom-layout(space-around, center, row, no-wrap);
+        width: 90%;
+        margin-top: 1.5rem;
+      }
+    }
+
     .links a {
       margin-left: 4rem;
       font-size: 1.6rem;
+
+      @media @mobile {
+        margin: 0;
+      }
     }
   }
 } //Closes nav-container
